@@ -1,2 +1,2 @@
-# imge_manipulation
-this is a project of  C++ (imge editor)
+# image_manipulation
+this is a project of  C++ (iamge editor)
