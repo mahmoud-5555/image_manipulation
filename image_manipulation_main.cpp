@@ -26,8 +26,8 @@ char exit_test;
     cout << "4-	Flip Image\n 5-	Darken and Lighten Image\n 6-	Rotate Image\n";
     cout << "7-	Detect Image Edges 8-	Enlarge Image 9-	Shrink Image\n";
     cout << "a-	Mirror 1/2 Image\n b-	Shuffle Image\n c-	Blur Image\n d-	Crop Image\n";
-    cout <<  "e-	Skew Image Right\n f-	Skew Image Up \n s- Save the image to a file ";
-    cout <<"0-	Exit\n z- do anther change in same file\n l- loadfile (new file) ";
+    cout <<  "e- Skew Image Right\n f-	Skew Image Up \n s- Save the image to a file ";
+    cout <<"0- Exit\n z- do anther change in same file\n l- loadfile (new file) ";
     cin >> ordar;
     switch ((int) ordar)
     {
@@ -45,7 +45,9 @@ char exit_test;
       case '2' /*Invert Filter*/:
         if (load)
         {
-          /* code */
+          Invert(); /* - > code */
+          change = true;
+          saved = false;
         }
         else
         {
@@ -57,6 +59,8 @@ char exit_test;
         if (load)
         {
           /* code */
+            change = true;
+            saved = false;
         }
         else
         {
@@ -68,6 +72,8 @@ char exit_test;
         if (load)
         {
           /* code */
+          change = true;
+          saved = false;
         }
         else
         {
@@ -79,6 +85,8 @@ char exit_test;
         if (load)
         {
           /* code */
+          change = true;
+          saved = false;
         }
         else
         {
@@ -90,6 +98,8 @@ char exit_test;
       if (load)
         {
           /* code */
+          change = true;
+          saved = false;
         }
         else
         {
@@ -101,6 +111,8 @@ char exit_test;
         if (load)
         {
           /* code */
+          change = true;
+          saved = false;
         }
         else
         {
@@ -112,6 +124,8 @@ char exit_test;
         if (load)
         {
           /* code */
+          change = true;
+          saved = false;
         }
         else
         {
@@ -123,6 +137,8 @@ char exit_test;
         if (load)
         {
           /* code */
+          change = true;
+          saved = false;
         }
         else
         {
@@ -134,6 +150,8 @@ char exit_test;
       if (load)
         {
           /* code */
+          change = true;
+          saved = false;
         }
         else
         {
@@ -145,6 +163,8 @@ char exit_test;
         if (load)
         {
           /* code */
+          change = true;
+          saved = false;
         }
         else
         {
@@ -156,6 +176,8 @@ char exit_test;
         if (load)
         {
           /* code */
+          change = true;
+          saved = false;
         }
         else
         {
@@ -167,6 +189,8 @@ char exit_test;
         if (load)
         {
           /* code */
+          change = true;
+          saved = false;
         }
         else
         {
@@ -178,6 +202,8 @@ char exit_test;
         if (load)
         {
           /* code */
+          change = true;
+          saved = false;
         }
         else
         {
@@ -189,6 +215,8 @@ char exit_test;
         if (load)
         {
           /* code */
+          change = true;
+          saved = false;
         }
         else
         {
@@ -202,7 +230,7 @@ char exit_test;
       saveImage();
       cout <<"file saved :: you can load anther file or complete edit in same file \n ";
       change = false;
-      seved = true;
+      saved = true;
     }
     else
       cout << "no file change plese make change first \n ";
@@ -216,7 +244,7 @@ char exit_test;
 
     case '0' /*0-	Exit*/:
 
-    if(seved)
+    if(saved)
     {
       cout << "exit done \n";
         return (0);
@@ -235,7 +263,7 @@ char exit_test;
           return (0);
           break;
 
-        case 'y' /* exit with out saving */:
+        case 'y' /* exit without saving */:
           cout <<"exit sucssifull";
             return (0);
           break;
@@ -297,11 +325,12 @@ void saveImage () {
 }
 
 //_________________________________________
+/*
 void doSomethingForImage() {
   for (int i = 0; i < SIZE; i++) {
     for (int j = 0; j< SIZE; j++) {
 
-/* Example code to convert to BW the image
+ Example code to convert to BW the image
    A better version should NOt use 127 but the
    average of the pixels
 
@@ -309,11 +338,12 @@ void doSomethingForImage() {
             image[i][j] = 255;
         else
             image[i][j] = 0;
-*/
-// do something with the image
+
+ do something with the image
     }
   }
 }
+*/
 
 
 

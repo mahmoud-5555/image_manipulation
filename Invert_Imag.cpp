@@ -1,21 +1,21 @@
 #include <iostream>
+#include "main.h"
 using namespace std;
 /**
- * Invert -  filter that Invert the color
- * @imge : is the data of the image that stord in unsiged int matrics
+ * Invert - this function deel with the globul var (image) 
+ * the function make inveart to the color
  * 
- * Return: void no return
- * 
+ * Return : no return value
  * 
 */
 
-void Invert(unsigned char image [256][256],unsigned char res[256][256])
+void Invert(void)
 {
-    for (int i = 0; i < 256;i++)
+    for (int i = 0; i < 256; i++)
     { 
-        for (int j = 0; j < 256;j++)
+        for (int j = 0; j < 256; j++)
         {
-            res [i][j] = 255 - image[i][j] ;
+            image[i][j] = 255 - image[i][j] ;
         }
 
     }
