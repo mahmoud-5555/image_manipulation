@@ -26,7 +26,7 @@ char exit_test;
     cout << "4-	Flip Image\n 5-	Darken and Lighten Image\n 6-	Rotate Image\n";
     cout << "7-	Detect Image Edges 8-	Enlarge Image 9-	Shrink Image\n";
     cout << "a-	Mirror 1/2 Image\n b-	Shuffle Image\n c-	Blur Image\n d-	Crop Image\n";
-    cout <<  "e-	Skew Image Right\n f-	Skew Image Up \n Save the image to a file ";
+    cout <<  "e-	Skew Image Right\n f-	Skew Image Up \n s- Save the image to a file ";
     cout <<"0-	Exit\n z- do anther change in same file\n l- loadfile (new file) ";
     cin >> ordar;
     switch ((int) ordar)
@@ -38,7 +38,7 @@ char exit_test;
         }
         else
         {
-          cout <<"pleae load the file first befor using the tool\n";
+          cout <<"please load the file first befor using the tool\n";
         }
         break;
 
@@ -49,7 +49,7 @@ char exit_test;
         }
         else
         {
-          cout <<"pleae load the file first befor using the tool\n";
+          cout <<"please load the file first befor using the tool\n";
         }
         break;
 
@@ -60,7 +60,7 @@ char exit_test;
         }
         else
         {
-          cout <<"pleae load the file first befor using the tool\n";
+          cout <<"please load the file first befor using the tool\n";
         }
         break;
 
@@ -71,7 +71,7 @@ char exit_test;
         }
         else
         {
-          cout <<"pleae load the file first befor using the tool\n";
+          cout <<"please load the file first befor using the tool\n";
         }
         break;
 
@@ -82,7 +82,7 @@ char exit_test;
         }
         else
         {
-          cout <<"pleae load the file first befor using the tool\n";
+          cout <<"please load the file first befor using the tool\n";
         }
         break;
 
@@ -93,7 +93,7 @@ char exit_test;
         }
         else
         {
-          cout <<"pleae load the file first befor using the tool\n";
+          cout <<"please load the file first befor using the tool\n";
         }
         break;
 
@@ -104,7 +104,7 @@ char exit_test;
         }
         else
         {
-          cout <<"pleae load the file first befor using the tool\n";
+          cout <<"please load the file first befor using the tool\n";
         }
         break;
 
@@ -115,7 +115,7 @@ char exit_test;
         }
         else
         {
-          cout <<"pleae load the file first befor using the tool\n";
+          cout <<"please load the file first befor using the tool\n";
         }
         break;
 
@@ -126,7 +126,7 @@ char exit_test;
         }
         else
         {
-          cout <<"pleae load the file first befor using the tool\n";
+          cout <<"please load the file first befor using the tool\n";
         }
         break;
 
@@ -137,7 +137,7 @@ char exit_test;
         }
         else
         {
-          cout <<"pleae load the file first befor using the tool\n";
+          cout <<"please load the file first befor using the tool\n";
         }
         break;
 
@@ -148,7 +148,7 @@ char exit_test;
         }
         else
         {
-          cout <<"pleae load the file first befor using the tool\n";
+          cout <<"please load the file first befor using the tool\n";
         }
         break;
 
@@ -159,7 +159,7 @@ char exit_test;
         }
         else
         {
-          cout <<"pleae load the file first befor using the tool\n";
+          cout <<"please load the file first befor using the tool\n";
         }
         break;
 
@@ -170,7 +170,7 @@ char exit_test;
         }
         else
         {
-          cout <<"pleae load the file first befor using the tool\n";
+          cout <<"please load the file first befor using the tool\n";
         }
         break;
 
@@ -181,7 +181,7 @@ char exit_test;
         }
         else
         {
-          cout <<"pleae load the file first befor using the tool\n";
+          cout <<"please load the file first befor using the tool\n";
         }
         break;
 
@@ -192,7 +192,7 @@ char exit_test;
         }
         else
         {
-          cout <<"pleae load the file first befor using the tool\n";
+          cout <<"please load the file first befor using the tool\n";
         }
         break;
 
