@@ -44,5 +44,5 @@ Make sure you have made the desired changes to the file before saving it.
     - after save the file you can exit by command '0' or commplet work in the image and after that saved by anther name
     - and last thing you should to if you try to exit without saving your project you have chance to save it or just exit with out saveing or exit
     -
-## the program deal with bmp file and size 250 * 250 pixel and any change in the size or file type is going to crash the program  
+## the program deal with bmp file and size 256 * 256 pixel and any change in the size or file type is going to crash the program  
     -  
