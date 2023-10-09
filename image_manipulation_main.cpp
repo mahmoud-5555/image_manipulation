@@ -6,29 +6,51 @@
 #include "main.h"
 using namespace std;
 
+unsigned char image[256][256];
+bool load = false;
+bool change = false;
+bool saved = false;
 
 void loadImage ();
 void saveImage ();
-void doSomethingForImage ();
+//void doSomethingForImage ();
+
+/**
+ * main - entre point - include exit points  and the program user_enterface
+ * read the read me to have petter understand of how the function work
+ * no argumants
+ * Return : 0 always 
+ * 
+ * 
+*/
 
 
 int main()
 {
-char ordar;
-char exit_test;
-  //welcome menu 
-  cout << "welcome to image editor \n";
+    cout << "*****************************\n"; 
+    cout << "welcome to image editor \n";
+    cout << "*****************************\n";
+    cout <<"please check the read me file to undrstand how you deal with the program\n";
+
   while (true)
   {
+    char ordar;
+    char exit_test;
+    //welcome menu
+
     cout << "Please enter file name of the image to process: \n";
 
-    cout <<"1-	Black & White Filter\n 2-	Invert Filter\n 3- Merge Filter\n";
-    cout << "4-	Flip Image\n 5-	Darken and Lighten Image\n 6-	Rotate Image\n";
-    cout << "7-	Detect Image Edges 8-	Enlarge Image 9-	Shrink Image\n";
-    cout << "a-	Mirror 1/2 Image\n b-	Shuffle Image\n c-	Blur Image\n d-	Crop Image\n";
-    cout <<  "e- Skew Image Right\n f-	Skew Image Up \n s- Save the image to a file ";
-    cout <<"0- Exit\n z- do anther change in same file\n l- loadfile (new file) ";
+    cout << "1- Black & White Filter\n2- Invert Filter\n3- Merge Filter\n";
+    cout << "4- Flip Image\n5- Darken and Lighten Image\n6- Rotate Image\n";
+    cout << "7- Detect Image Edges\n8- Enlarge Image\n9- Shrink Image\n";
+    cout << "a- Mirror 1/2 Image\nb- Shuffle Image\nc- Blur Image\nd- Crop Image\n";
+    cout << "e- Skew Image Right\nf- Skew Image Up\ns- Save the image to a file ";
+    cout << "0- Exit\nz- do anther change in same file\nl- loadfile (new file)\n ";
+    
+
     cin >> ordar;
+
+
     switch ((int) ordar)
     {
       case '1' /*Black & White Filter*/:
@@ -38,7 +60,9 @@ char exit_test;
         }
         else
         {
+          cout << "**************************************************\n";
           cout <<"please load the file first befor using the tool\n";
+          cout << "**************************************************\n";
         }
         break;
 
@@ -51,7 +75,9 @@ char exit_test;
         }
         else
         {
+          cout <<"**************************************************\n";
           cout <<"please load the file first befor using the tool\n";
+          cout <<"**************************************************\n";
         }
         break;
 
@@ -64,7 +90,9 @@ char exit_test;
         }
         else
         {
+          cout <<"**************************************************\n";
           cout <<"please load the file first befor using the tool\n";
+          cout <<"**************************************************\n";
         }
         break;
 
@@ -77,7 +105,9 @@ char exit_test;
         }
         else
         {
+          cout <<"**************************************************\n";
           cout <<"please load the file first befor using the tool\n";
+          cout <<"**************************************************\n";
         }
         break;
 
@@ -90,7 +120,9 @@ char exit_test;
         }
         else
         {
+          cout <<"**************************************************\n";
           cout <<"please load the file first befor using the tool\n";
+          cout << "**************************************************\n";
         }
         break;
 
@@ -103,7 +135,9 @@ char exit_test;
         }
         else
         {
+          cout << "**************************************************\n";
           cout <<"please load the file first befor using the tool\n";
+          cout << "**************************************************\n";
         }
         break;
 
@@ -116,7 +150,9 @@ char exit_test;
         }
         else
         {
+          cout << "**************************************************\n";
           cout <<"please load the file first befor using the tool\n";
+          cout << "**************************************************\n";
         }
         break;
 
@@ -129,7 +165,9 @@ char exit_test;
         }
         else
         {
+          cout << "**************************************************\n";
           cout <<"please load the file first befor using the tool\n";
+          cout << "**************************************************\n";
         }
         break;
 
@@ -142,7 +180,9 @@ char exit_test;
         }
         else
         {
+          cout << "**************************************************\n";
           cout <<"please load the file first befor using the tool\n";
+          cout << "**************************************************\n";
         }
         break;
 
@@ -155,7 +195,9 @@ char exit_test;
         }
         else
         {
+          cout << "**************************************************\n";
           cout <<"please load the file first befor using the tool\n";
+          cout << "**************************************************\n";
         }
         break;
 
@@ -168,7 +210,9 @@ char exit_test;
         }
         else
         {
+          cout << "**************************************************\n";
           cout <<"please load the file first befor using the tool\n";
+          cout << "**************************************************\n";
         }
         break;
 
@@ -181,7 +225,9 @@ char exit_test;
         }
         else
         {
+          cout << "**************************************************\n";
           cout <<"please load the file first befor using the tool\n";
+          cout << "**************************************************\n";
         }
         break;
 
@@ -194,7 +240,9 @@ char exit_test;
         }
         else
         {
+          cout << "**************************************************\n";
           cout <<"please load the file first befor using the tool\n";
+          cout << "**************************************************\n";
         }
         break;
 
@@ -207,7 +255,9 @@ char exit_test;
         }
         else
         {
+          cout << "**************************************************\n";
           cout <<"please load the file first befor using the tool\n";
+          cout << "**************************************************\n";
         }
         break;
 
@@ -220,7 +270,9 @@ char exit_test;
         }
         else
         {
+          cout << "**************************************************\n";
           cout <<"please load the file first befor using the tool\n";
+          cout << "**************************************************\n";
         }
         break;
 
@@ -253,7 +305,7 @@ char exit_test;
       bool cancel = false;
       while (!cancel)
       {
-        cout <<"this file has change didn't saved do you sure that you wnna exit ?\n     s: save first    y: exit     n: cancel \n"; 
+        cout <<"this file has change didn't saved do you sure that you wnna exit ?\n     s: save first    y: exit     c: cancel \n"; 
         cin >> exit_test;
         switch (exit_test)
         {
@@ -268,7 +320,7 @@ char exit_test;
             return (0);
           break;
 
-        case 'n' /* constant-expression */:
+        case 'c' /* constant-expression */:
           cancel = true;
           break;
         
@@ -297,17 +349,52 @@ char exit_test;
 }
 
 //_________________________________________
+
+/**
+ * loadImage - function that import image file 
+ * no argument 
+ * Return: no return 
+ * thair is modfied of demo_function to handel the situation of Error load_file 
+ * 
+ * 
+*/
 void loadImage () {
+
    char imageFileName[100];
+   int test_load = 1;
+   bool cancle_load = false;
 
-   // Get gray scale image file name
-   cout << "Enter the source image file name: ";
-   cin >> imageFileName;
-   cout << '\n';
+   while(test_load && !cancle_load)
+   {
+    // Get gray scale image file name
+    cout << "Enter the source image file name: ";
+    cin >> imageFileName;
+    cout << '\n';
 
-   // Add to it .bmp extension and load image
-   strcat (imageFileName, ".bmp");
-   readGSBMP(imageFileName, image);
+    // Add to it .bmp extension and load image
+    strcat (imageFileName, ".bmp");
+    test_load = readGSBMP(imageFileName, image);
+    if(test_load && load)
+    {
+      int test_load_ordar;
+    
+      cout <<"press 'c': to cancle load  or press '0': to exit  or (((press any key to try again)))\n";
+      cin >> test_load_ordar;
+      switch (test_load_ordar)
+      {
+      case 'c':
+        cancle_load = true;
+        break;
+      case '0':
+        exit(0);
+        break;
+    
+      default:
+        break;
+      }
+    }
+
+  }
 }
 
 //_________________________________________

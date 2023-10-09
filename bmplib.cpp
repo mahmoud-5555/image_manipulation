@@ -418,6 +418,7 @@ int writeGSBMP(const char* filename, unsigned char outputImage[][SIZE])
 //   ofile.close();
 //   return 0;
 // }
+/*
 
 int shows = 0;
 
@@ -441,3 +442,4 @@ void showGSBMP(unsigned char inputImage[][SIZE]) {
   writeGSBMP("/tmp/bmplib.bmp", inputImage);
   show();
 }
+*/

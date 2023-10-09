@@ -1,11 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
-#include "bmplib.h"
 
-unsigned char image[SIZE][SIZE];
-bool load = false;
-bool change = false;
-bool saved = false;
+
+extern unsigned char image[256][256];
 
 void Invert(void);
 /* The declareing of all function*/

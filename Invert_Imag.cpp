@@ -1,6 +1,7 @@
 #include <iostream>
 #include "main.h"
 using namespace std;
+
 /**
  * Invert - this function deel with the globul var (image) 
  * the function make inveart to the color
