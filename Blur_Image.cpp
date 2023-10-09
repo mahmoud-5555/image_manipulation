@@ -13,7 +13,7 @@ using namespace std;
 
 
 
-void blurImage() {
+void blurImage(void) {
     const int KERNEL_SIZE = 3;
     int kernelRadius = KERNEL_SIZE / 2;
     unsigned char blurredImage[SIZE][SIZE];
