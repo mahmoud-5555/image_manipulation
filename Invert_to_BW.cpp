@@ -10,19 +10,16 @@ using namespace std;
 
 void InvertBW(void)
 {
- for(int i = 0; i < SIZE; )
- {
- 	for(int j = 0; j < SIZE; j++)
-	{
+ for(int i = 0; i < SIZE; ){
+ 	for(int j = 0; j < SIZE; j++){
  		
  		
- 		if(image[i][j] < 122)
-		{
+ 		if(image[i][j] < 128){
  			
  			image[i][j]=0;
-		}
+		 }
 		else image[i][j] = 256; 
  		
 	 }
-   }
+ }
 }
