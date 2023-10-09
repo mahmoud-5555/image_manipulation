@@ -9,7 +9,7 @@ using namespace std;
 */
 
 // 3 merge Filter
-void mergeFilter() {
+void mergeFilter(void) {
 
   char imageFileName2[100];
 
