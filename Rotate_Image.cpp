@@ -1,8 +1,4 @@
-#include <iostream>
-#include "bmplib.h"
-#include <main.h>
-
-using namespace std;
+#include "main.h"
 /**
  * RotateImage - The function rotate image the function ask the user to enter degree between : (90) or (180) or (360) 
  * if the user enter:

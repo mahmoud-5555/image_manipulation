@@ -1,8 +1,4 @@
-#include<iostream>
-#include <cstring>
 #include "main.h"
-#include "bmplib.h"
-using namespace std;
 /**
  * MergeImage - function will merge two image by taking the half of pixels of from every and merge them together
  * 

@@ -1,10 +1,4 @@
-#include <iostream>
-#include <fstream>
-#include <cstring>
-#include <cmath>
-#include "bmplib.cpp"
 #include "main.h"
-using namespace std;
 
 unsigned char image[256][256];
 bool load = false;
@@ -56,7 +50,9 @@ int main()
       case '1' /*Black & White Filter*/:
         if (load)
         {
-          /* code */
+          void InvertBW(void);
+          change = true;
+          saved = false;
         }
         else
         {
@@ -84,7 +80,7 @@ int main()
       case '3' /*Merge Filter */:
         if (load)
         {
-          /* code */
+            mergeFilter();
             change = true;
             saved = false;
         }
@@ -99,9 +95,12 @@ int main()
       case '4' /*Flip Image*/:
         if (load)
         {
-          /* code */
-          change = true;
-          saved = false;
+          int test_flip_image = flip_image();
+          if(!test_flip_image)
+          {
+            change = true;
+            saved = false;
+          }
         }
         else
         {
@@ -129,7 +128,7 @@ int main()
       case '6' /*Rotate Image*/:
       if (load)
         {
-          /* code */
+          rotateImage();
           change = true;
           saved = false;
         }
@@ -174,7 +173,7 @@ int main()
       case '9' /*Shrink Image*/:
         if (load)
         {
-          /* code */
+          shrinkImage();
           change = true;
           saved = false;
         }
@@ -219,7 +218,7 @@ int main()
       case 'c' /*Blur Image*/:
         if (load)
         {
-          /* code */
+          void blurImage(void);
           change = true;
           saved = false;
         }
@@ -310,10 +309,15 @@ int main()
         switch (exit_test)
         {
         case 's' /* Save the image to a file */:
-          saveImage();
-          cout << "saved \n";
-          return (0);
-          break;
+          if(change)
+          {
+            saveImage();
+            cout << "saved \n";
+            return (0);
+          }
+          else
+            cout << "no change to save\n";
+            break;
 
         case 'y' /* exit without saving */:
           cout <<"exit sucssifull";

@@ -1,7 +1,6 @@
-#include<iostream>
 #include "main.h"
-#include "bmplib.h"
-using namespace std;
+
+
 /**
  * 
  * BlurImage - The function blur the image (make it not clear)  by take every pixel it calculates by take the sum of the neighborhood
