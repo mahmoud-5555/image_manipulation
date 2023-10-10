@@ -1,3 +1,8 @@
+#include <iostream>
+#include "bmplib.h"
+#include <main.h>
+
+using namespace std;
 /**
  * RotateImage - The function rotate image the function ask the user to enter degree between : (90) or (180) or (360) 
  * if the user enter:
@@ -15,7 +20,7 @@ void rotateImage() {
   int degree;
   // ask user to Enter rotate degree
   cout << "Rotate (90), (180) or (270) degrees?";
-  cin>> degree;
+  cin >> degree;
   unsigned char rotated_image[SIZE][SIZE];
   if (degree == 90) {
   

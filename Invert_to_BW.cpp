@@ -1,5 +1,6 @@
-#include<bits/stdc++.h>
+#include<iostream>
 #include "main.h"
+#include "bmplib.h"
 using namespace std;
 
 /*
@@ -10,7 +11,7 @@ using namespace std;
 
 void InvertBW(void)
 {
- for(int i = 0; i < SIZE; ){
+ for(int i = 0; i < SIZE;i++){
  	for(int j = 0; j < SIZE; j++){
  		
  		

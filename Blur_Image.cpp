@@ -1,5 +1,6 @@
 #include<iostream>
 #include "main.h"
+#include "bmplib.h"
 using namespace std;
 /**
  * 

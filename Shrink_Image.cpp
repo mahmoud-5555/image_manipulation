@@ -1,5 +1,7 @@
 #include<iostream>
 #include "main.h"
+#include "bmplib.h"
+
 using namespace std;
 /**
  * ShrinkImage - The function shrink size image to 1/2 or 1/3 or 1/4 

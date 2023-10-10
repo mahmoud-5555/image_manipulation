@@ -1,5 +1,6 @@
-#include <bits/stdc++.h>
+#include<iostream>
 #include "main.h"
+#include "bmplib.h"
 using namespace std;
 
 
@@ -9,8 +10,6 @@ using namespace std;
 * @load :image
 * Alway return 0 (successfull)
 */
-
-   
 
  void flip_image()
  {
