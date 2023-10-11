@@ -38,14 +38,6 @@ void rotateImage() {
   }
 
   else if (degree == 180) {
-
-    // Reverse Rows
-    for (int i = 0;i < SIZE / 2; i++) {
-      for (int j = 0; j < SIZE; j++) {
-        swap(image[i][j], image[SIZE - 1 - j][j]);
-      }
-    }
-
     // Reverse columns
     for (int i = 0;i < SIZE; i++) {
       for (int j = 0; j < SIZE / 2; j++) {
@@ -53,15 +45,8 @@ void rotateImage() {
       }
     }
 
-
-    // back to array variable image
-    for (int i = 0;i < SIZE; i++) {
-      for (int j = 0; j < SIZE; j++) {
-        image[i][j] = rotated_image[i][j];
-      }
-    }
-
   }
+
 
   else if (degree == 270) {
         // Transpose the matrix
