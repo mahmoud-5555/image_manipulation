@@ -1,9 +1,19 @@
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+*/
 #include "main.h"
 
+//global varibal controal the main
 unsigned char image[256][256];
-bool load = false;
-bool change = false;
-bool saved = false;
+
+bool load = false; // usid in checking if thair file_image or not 
+bool change = false;//usid in checking if thair change in the image or not  
+bool saved = false;//usid in checking if you savid the file or not ((usid in exit case)) 
 
 void loadImage ();
 void saveImage ();
@@ -11,13 +21,12 @@ void saveImage ();
 
 /**
  * main - entre point - include exit points  and the program user_enterface
- * read the read me to have petter understand of how the function work
+ * read the readme file to have petter understand of how the function work
  * no argumants
  * Return : 0 always 
  * 
  * 
 */
-
 
 int main()
 {
@@ -30,27 +39,24 @@ int main()
   {
     char ordar;
     char exit_test;
-    //welcome menu
 
+    //display the main menu to the user
     cout << "Please enter file name of the image to process: \n";
-
     cout << "1- Black & White Filter\n2- Invert Filter\n3- Merge Filter\n";
     cout << "4- Flip Image\n5- Darken and Lighten Image\n6- Rotate Image\n";
     cout << "7- Detect Image Edges\n8- Enlarge Image\n9- Shrink Image\n";
     cout << "a- Mirror 1/2 Image\nb- Shuffle Image\nc- Blur Image\nd- Crop Image\n";
-    cout << "e- Skew Image Right\nf- Skew Image Up\ns- Save the image to a file ";
+    cout << "e- Skew Image Right\nf- Skew Image Up\ns- Save the image to a file\n ";
     cout << "0- Exit\nz- do anther change in same file\nl- loadfile (new file)\n ";
-    
-
     cin >> ordar;
 
-
+  //structure of main menu
     switch ((int) ordar)
     {
       case '1' /*Black & White Filter*/:
-        if (load)
+        if (load) // check if tair file that is previously loaded
         {
-          void InvertBW(void);
+          /*code*/
           change = true;
           saved = false;
         }
@@ -342,13 +348,6 @@ int main()
   }
 }  
 
-
-
-
-
-  //
-  //doSomethingForImage();
-  //
   return 0;
 }
 
@@ -360,8 +359,8 @@ int main()
  * Return: no return 
  * thair is modfied of demo_function to handel the situation of Error load_file 
  * 
- * 
 */
+
 void loadImage () {
 
    char imageFileName[100];

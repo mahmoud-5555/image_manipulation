@@ -1,9 +1,5 @@
 #include "main.h"
 
-
-
-
-
 /*
 * Flip_image : This fliter allows the user to flip image horizontally or vertically as if it is  reflected on a mirror
 * @load :image

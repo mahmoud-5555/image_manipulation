@@ -1,6 +1,5 @@
 #include "main.h"
 
-
 /**
  * 
  * BlurImage - The function blur the image (make it not clear)  by take every pixel it calculates by take the sum of the neighborhood
@@ -9,9 +8,6 @@
  * Return : no return value
  * 
 */
-
-
-
 
 void blurImage(void) {
     const int KERNEL_SIZE = 3;
