@@ -12,7 +12,7 @@ extern unsigned char image[256][256];
 
 void Invert(void);
 void blurImage(void);
-//void enlarge_Image(void);
+/*void enlarge_Image(void)*/;
 int flip_image(void);
 void mergeFilter(void);
 void shrinkImage(void);
