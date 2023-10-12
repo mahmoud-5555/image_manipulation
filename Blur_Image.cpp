@@ -21,7 +21,7 @@ void blurImage(void) {
     for (int x = kernelRadius; x < SIZE - kernelRadius; x++) {
         for (int y = kernelRadius; y < SIZE - kernelRadius; y++) {
             int sum = 0;
-
+            
             // Calculate the average color value from the all sides (left and right and top and bottom) and 
             // (right-left right-top right-middle) and (middle-top middle-bottom middle-middle) (left-top left-bottom left-middle)
             //  and store it in the variable in sum 
@@ -43,3 +43,4 @@ void blurImage(void) {
         }
     }
 }
+
