@@ -143,7 +143,7 @@ int main()
       case '7' /*Detect Image Edges */:
         if (load)
         {
-          /* code */
+          void DetectImageEdges();
           change = true;
           saved = false;
         }
