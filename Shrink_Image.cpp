@@ -1,6 +1,5 @@
-#include<iostream>
 #include "main.h"
-using namespace std;
+
 /**
  * ShrinkImage - The function shrink size image to 1/2 or 1/3 or 1/4 
  * 
@@ -11,19 +10,19 @@ using namespace std;
 
 // 9- shrink Image
 
-void shrinkImage() {
-    cout << "Shrink to (1/2), (1/3) or (1/4)?" << '\n';
-    string shrinkSize;
+void shrinkImage(void) {
+    cout << "Shrink to press 1: (1/2), press 2: (1/3) or press 3:(1/4)?" << '\n';
+    int  shrinkSize;
     cin >> shrinkSize;
 
     int shrink = 1;
 
     // Calculate the shrink factor based on user input
-    if (shrinkSize == "1/2") {
+    if (shrinkSize == 1) {
         shrink = 2;
-    } else if (shrinkSize == "1/3") {
+    } else if (shrinkSize == 2) {
         shrink = 3;
-    } else if (shrinkSize == "1/4") {
+    } else if (shrinkSize == 3) {
         shrink = 4;
     }
 

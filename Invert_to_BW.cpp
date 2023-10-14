@@ -1,6 +1,4 @@
-#include<bits/stdc++.h>
 #include "main.h"
-using namespace std;
 
 /*
 *InvertBW: invert   image to black and white
@@ -10,15 +8,15 @@ using namespace std;
 
 void InvertBW(void)
 {
- for(int i = 0; i < SIZE; ){
+ for(int i = 0; i < SIZE;i++){
  	for(int j = 0; j < SIZE; j++){
  		
- 		
- 		if(image[i][j] < 128){
+ 		if(image[i][j] < 127){
  			
- 			image[i][j]=0;
+ 			image[i][j] = 0;
 		 }
-		else image[i][j] = 256; 
+		else 
+			image[i][j] = 255; 
  		
 	 }
  }
