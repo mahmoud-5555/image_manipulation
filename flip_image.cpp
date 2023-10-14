@@ -22,7 +22,7 @@
   
  	switch (flip)
 	{
-	case 'h':// flip the colomns for horizontall
+	case 'h':// flip the rows for horizontall
 
 		for(int i = 0 ; i < SIZE ; i++){
  			for(int j = 0 ; j < SIZE / 2; j++){
@@ -33,7 +33,7 @@
 		return (0);
 		break;
 
-		case 'v'://flip the rows for verticall
+		case 'v'://flip the columns for verticall
 
 			for(int i = 0 ; i < SIZE / 2; i++){
  				for(int j = 0 ; j < SIZE ; j++){
