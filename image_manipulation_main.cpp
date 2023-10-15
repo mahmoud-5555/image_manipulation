@@ -249,6 +249,7 @@ int main()
         if (load)
         {
           /* code */
+          skewImageRight();
           change = true;
           saved = false;
         }
