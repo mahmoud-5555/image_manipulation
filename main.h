@@ -19,6 +19,7 @@ void mergeFilter(void);
 void shrinkImage(void);
 void rotateImage(void);
 void DetectImageEdges();
+void skewImageRight();
 
 /* The declareing of all function*/
 
