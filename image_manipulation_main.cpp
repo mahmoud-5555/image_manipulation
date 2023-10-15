@@ -113,7 +113,7 @@ int main()
       case '5' /*Darken and Lighten Image */:
         if (load)
         {
-          /* code */
+          darkenLighten();
           change = true;
           saved = false;
         }
