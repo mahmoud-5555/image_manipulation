@@ -16,9 +16,9 @@ using namespace std;
 int darkenLighten() 
 
  {
-	bool filp_image_cancel = false;
+	bool darkenLighten_image_cancel = false;
 
-	while (!filp_image_cancel)
+	while (!darkenLighten_image_cancel)
 	{
 		cout << "Do you want to (d)arken or (l)ighten? \n";
  		char choose;
