@@ -20,6 +20,7 @@ void shrinkImage(void);
 void rotateImage(void);
 void DetectImageEdges();
 void skewImageRight();
+void skewImageUp();
 
 /* The declareing of all function*/
 
