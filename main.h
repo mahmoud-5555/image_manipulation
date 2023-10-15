@@ -21,6 +21,7 @@ void rotateImage(void);
 void DetectImageEdges();
 void skewImageRight();
 void skewImageUp();
+int darkenLighten();
 
 /* The declareing of all function*/
 
