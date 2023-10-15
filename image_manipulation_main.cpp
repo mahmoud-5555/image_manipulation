@@ -264,7 +264,7 @@ int main()
       case 'f' /*Skew Image Up*/:
         if (load)
         {
-          /* code */
+          skewImageUp();
           change = true;
           saved = false;
         }
