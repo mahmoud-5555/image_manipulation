@@ -51,7 +51,7 @@
 		cin >> ordar_filp_image_cancel;
 		if (ordar_filp_image_cancel == 'c')
 		{
-			cout << "canceled";
+			cout << "canceled\n";
 			return (1);
 		}
 		

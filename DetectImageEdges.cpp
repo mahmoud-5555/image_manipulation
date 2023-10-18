@@ -9,7 +9,7 @@
 */
 
 
-void DetectImageEdges()
+void DetectImageEdges(void)
 {
 	
    bool flag = false;

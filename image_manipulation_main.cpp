@@ -50,7 +50,7 @@ int main()
       case '1' /*Black & White Filter*/:
         if (load)
         {
-          void InvertBW(void);
+          InvertBW();
           change = true;
           saved = false;
         }
@@ -65,7 +65,7 @@ int main()
       case '2' /*Invert Filter*/:
         if (load)
         {
-          Invert(); /* - > code */
+          Invert();
           change = true;
           saved = false;
         }
@@ -113,7 +113,7 @@ int main()
       case '5' /*Darken and Lighten Image */:
         if (load)
         {
-          /* code */
+          darkenLighten();
           change = true;
           saved = false;
         }
@@ -143,7 +143,7 @@ int main()
       case '7' /*Detect Image Edges */:
         if (load)
         {
-          void DetectImageEdges();
+          DetectImageEdges();
           change = true;
           saved = false;
         }
@@ -158,7 +158,7 @@ int main()
       case '8' /*Enlarge Image */:
         if (load)
         {
-          /* code */
+          enlarge_Image();
           change = true;
           saved = false;
         }
@@ -218,7 +218,7 @@ int main()
       case 'c' /*Blur Image*/:
         if (load)
         {
-          void blurImage(void);
+          blurImage();
           change = true;
           saved = false;
         }
@@ -248,7 +248,7 @@ int main()
       case 'e' /*Skew Image Right*/:
         if (load)
         {
-          /* code */
+          skewImageRight();
           change = true;
           saved = false;
         }
@@ -263,7 +263,7 @@ int main()
       case 'f' /*Skew Image Up*/:
         if (load)
         {
-          /* code */
+          skewImageUp();
           change = true;
           saved = false;
         }
@@ -284,7 +284,7 @@ int main()
       saved = true;
     }
     else
-      cout << "no file change plese make change first \n ";
+      cout << "no file change please make change first \n ";
     break;
 
     case 'l' /*loadfile (new file)*/:
