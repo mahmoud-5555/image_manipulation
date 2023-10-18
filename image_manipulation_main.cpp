@@ -65,7 +65,7 @@ int main()
       case '2' /*Invert Filter*/:
         if (load)
         {
-          Invert(); /* - > code */
+          Invert();
           change = true;
           saved = false;
         }
@@ -158,7 +158,7 @@ int main()
       case '8' /*Enlarge Image */:
         if (load)
         {
-          /* code */
+          enlarge_Image();
           change = true;
           saved = false;
         }
@@ -248,7 +248,6 @@ int main()
       case 'e' /*Skew Image Right*/:
         if (load)
         {
-          /* code */
           skewImageRight();
           change = true;
           saved = false;
@@ -326,7 +325,6 @@ int main()
           break;
 
         case 'c' /* constant-expression */:
-          blurImage();
           cancel = true;
           break;
         

@@ -18,14 +18,10 @@ void InvertBW(void);
 void mergeFilter(void);
 void shrinkImage(void);
 void rotateImage(void);
-<<<<<<< HEAD
 void DetectImageEdges(void);
-=======
-void DetectImageEdges();
 void skewImageRight();
 void skewImageUp();
 int darkenLighten();
->>>>>>> adafa5e5684c1be4098f08d1ea74be53c44134a0
 
 /* The declareing of all function*/
 
