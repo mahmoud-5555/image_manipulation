@@ -113,7 +113,7 @@ int main()
       case '5' /*Darken and Lighten Image */:
         if (load)
         {
-          /* code */
+          darkenLighten();
           change = true;
           saved = false;
         }
@@ -249,6 +249,7 @@ int main()
         if (load)
         {
           /* code */
+          skewImageRight();
           change = true;
           saved = false;
         }
@@ -263,7 +264,7 @@ int main()
       case 'f' /*Skew Image Up*/:
         if (load)
         {
-          /* code */
+          skewImageUp();
           change = true;
           saved = false;
         }
