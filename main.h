@@ -18,7 +18,7 @@ void InvertBW(void);
 void mergeFilter(void);
 void shrinkImage(void);
 void rotateImage(void);
-void DetectImageEdges();
+void DetectImageEdges(void);
 
 /* The declareing of all function*/
 

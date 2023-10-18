@@ -50,7 +50,7 @@ int main()
       case '1' /*Black & White Filter*/:
         if (load)
         {
-          void InvertBW(void);
+          InvertBW();
           change = true;
           saved = false;
         }
@@ -143,7 +143,7 @@ int main()
       case '7' /*Detect Image Edges */:
         if (load)
         {
-          void DetectImageEdges();
+          DetectImageEdges();
           change = true;
           saved = false;
         }
@@ -218,7 +218,7 @@ int main()
       case 'c' /*Blur Image*/:
         if (load)
         {
-          void blurImage(void);
+          blurImage();
           change = true;
           saved = false;
         }
@@ -284,7 +284,7 @@ int main()
       saved = true;
     }
     else
-      cout << "no file change plese make change first \n ";
+      cout << "no file change please make change first \n ";
     break;
 
     case 'l' /*loadfile (new file)*/:
@@ -325,6 +325,7 @@ int main()
           break;
 
         case 'c' /* constant-expression */:
+          blurImage();
           cancel = true;
           break;
         
