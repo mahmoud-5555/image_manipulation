@@ -22,6 +22,9 @@ void DetectImageEdges(void);
 void skewImageRight();
 void skewImageUp();
 int darkenLighten();
+void mirrorImage();
+void cropImage();
+
 
 /* The declareing of all function*/
 

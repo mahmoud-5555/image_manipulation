@@ -1,4 +1,16 @@
-Ahmed دفعة, [10/18/2023 1:49 PM]
+#include"main.h"
+
+/**
+ * CropImage - croping an image depending on the ranges
+ * @load : load image
+ * @x : x access
+ * @y : y access
+ * @l : the length
+ * @w : the width
+ * Return : No value to return 
+ */
+
+
 void cropImage()
 {
   int x,y,l,w;

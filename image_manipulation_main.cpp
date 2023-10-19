@@ -188,7 +188,7 @@ int main()
       case 'a' /*Mirror 1/2 Image*/:
       if (load)
         {
-          /* code */
+          mirrorImage();
           change = true;
           saved = false;
         }
@@ -233,7 +233,7 @@ int main()
       case 'd' /*Crop Image*/:
         if (load)
         {
-          /* code */
+          cropImage();
           change = true;
           saved = false;
         }
