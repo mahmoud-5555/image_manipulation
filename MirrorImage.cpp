@@ -16,6 +16,7 @@ void mirrorImage() {
 
   while(!flag)
   {
+	  cin >> side;
     switch(side)
     {
 	    case 'l':
@@ -54,5 +55,6 @@ void mirrorImage() {
 
 	    default :
 		    cout << "Invalid side " <<endl;
-    }
+      }
+   }
 }
