@@ -419,25 +419,25 @@ int writeGSBMP(const char* filename, unsigned char outputImage[][SIZE])
 //   return 0;
 // }
 
-int shows = 0;
+// int shows = 0;
 
-void show() {
-  system("eog --single-window /tmp/bmplib.bmp &");
+// void show() {
+//   system("eog --single-window /tmp/bmplib.bmp &");
 
-  // wait longer on the first show, OS takes time to start eog
-  //if (shows == 0) sleep(1);
+//   // wait longer on the first show, OS takes time to start eog
+//   //if (shows == 0) sleep(1);
 
-  // generally, wait 0.2 seconds = 200000 milliseconds
-  usleep(200000);
-  shows++;
-}
+//   // generally, wait 0.2 seconds = 200000 milliseconds
+//   usleep(200000);
+//   shows++;
+// }
 
-void showRGBBMP(unsigned char inputImage[][SIZE][RGB]) {
-  writeRGBBMP("/tmp/bmplib.bmp", inputImage);
-  show();
-}
+// void showRGBBMP(unsigned char inputImage[][SIZE][RGB]) {
+//   writeRGBBMP("/tmp/bmplib.bmp", inputImage);
+//   show();
+// }
 
-void showGSBMP(unsigned char inputImage[][SIZE]) {
-  writeGSBMP("/tmp/bmplib.bmp", inputImage);
-  show();
-}
+// void showGSBMP(unsigned char inputImage[][SIZE]) {
+//   writeGSBMP("/tmp/bmplib.bmp", inputImage);
+//   show();
+// }
