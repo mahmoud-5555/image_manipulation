@@ -38,8 +38,8 @@ int main()
     cout << "4- Flip Image\n5- Darken and Lighten Image\n6- Rotate Image\n";
     cout << "7- Detect Image Edges\n8- Enlarge Image\n9- Shrink Image\n";
     cout << "a- Mirror 1/2 Image\nb- Shuffle Image\nc- Blur Image\nd- Crop Image\n";
-    cout << "e- Skew Image Right\nf- Skew Image Up\ns- Save the image to a file ";
-    cout << "0- Exit\nz- do anther change in same file\nl- loadfile (new file)\n ";
+    cout << "e- Skew Image Right\nf- Skew Image Up\ns- Save the image to a file\n";
+    cout << "0- Exit\nl- loadfile (new file)\n ";
     
 
     cin >> ordar;
@@ -203,7 +203,7 @@ int main()
       case 'b' /*Shuffle Image*/:
         if (load)
         {
-          /* code */
+          shuffleImage();
           change = true;
           saved = false;
         }

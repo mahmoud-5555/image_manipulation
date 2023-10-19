@@ -44,7 +44,7 @@ void mirrorImage() {
 		    }
 		    flag = true;
 		    break;
-	    case'b':
+	    case'd':
 		    for (int i = 0; i  < SIZE / 2;i++) {
 			    for (int j = 0; j < SIZE; j++) {
 				    image[i][j] = image[SIZE - i - 1][j];

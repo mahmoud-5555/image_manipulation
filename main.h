@@ -24,6 +24,7 @@ void skewImageUp();
 int darkenLighten();
 void mirrorImage();
 void cropImage();
+void shuffleImage();
 
 
 /* The declareing of all function*/

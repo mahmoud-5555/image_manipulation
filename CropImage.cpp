@@ -26,7 +26,7 @@ void cropImage()
   for (int i = 0; i < SIZE; i++){
       for (int j = 0; j < SIZE; j++){
         // any pixel of the range of new size starting from x access and y access
-        if (i < x  i > x + l  j < y || j > y + w)
+        if (i < x || i > x + l || j < y || j > y + w)
             image[i][j] = 255; 
           }
      }
