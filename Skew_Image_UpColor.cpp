@@ -1,20 +1,13 @@
-#include<iostream>
 #include "main.h"
-using namespace std;
 
 
 
 /**
- *
  * skewImageRight: rotate Image by to up then shrink to fit into the frame of the image
- *
+ *@load : load image
+ *@degree : get degree
  * Return : no return value
- *
 */
-
-
-
-
 
 
 void skewImageUp()
