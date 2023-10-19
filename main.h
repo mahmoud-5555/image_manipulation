@@ -8,7 +8,7 @@
 #include <cmath>
 using namespace std;
 
-extern unsigned char image[256][256];
+extern unsigned char image[256][256][RGB];
 
 
 void blackWhiteFilter();
